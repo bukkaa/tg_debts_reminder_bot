@@ -1,3 +1,5 @@
+package com.dreamteam.debtsreminderbot;
+
 import org.springframework.scheduling.annotation.Scheduled;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
