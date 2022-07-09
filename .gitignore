@@ -37,4 +37,7 @@ out/
 hs_err_pid*
 replay_pid*
 
+# local configuration
 application-local.properties
+application-local.yml
+application-local.yaml
