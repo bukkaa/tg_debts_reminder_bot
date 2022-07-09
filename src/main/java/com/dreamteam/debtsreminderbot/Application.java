@@ -1,5 +1,6 @@
 package com.dreamteam.debtsreminderbot;
 
+import com.dreamteam.debtsreminderbot.configuration.TelegramConfig;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,22 +13,11 @@ import javax.annotation.PostConstruct;
 
 @Slf4j
 @SpringBootApplication
-@EnableConfigurationProperties
+@EnableConfigurationProperties(value = TelegramConfig.class)
 public class Application {
 
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
-    }
-
-    @PostConstruct
-    public void initBot() {
-        TelegramBotsApi telegramBotsApi = new TelegramBotsApi();
-
-        try {
-            telegramBotsApi.registerBot(new Bot());
-        } catch (TelegramApiRequestException e) {
-            log.error("Unable to initialize bot.", e);
-        }
     }
 
 }
