@@ -1,10 +1,10 @@
 plugins {
-    id 'org.springframework.boot' version '2.6.6'
-    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id "org.springframework.boot" version "2.7.1"
+    id "io.spring.dependency-management" version "1.0.11.RELEASE"
     id 'java'
 }
 
-group 'com.dreamteam'
+group 'com.bukkaa'
 version '1.0-SNAPSHOT'
 
 repositories {
@@ -14,7 +14,7 @@ repositories {
 ext {
     set("lombokVersion", "1.18.24")
     set("tgBotStarterVersion", "6.0.1")
-    set("jupiterVersion", "6.0.1")
+    set("jupiterVersion", "5.8.2")
 }
 
 compileJava {
@@ -23,12 +23,15 @@ compileJava {
     targetCompatibility = 11
 }
 
+// generates build-info.properties file for publishing information to Spring Boot Actuator’s info endpoint
+springBoot {
+    buildInfo()
+}
+
 dependencies {
     // spring
-    implementation("org.springframework.boot:spring-boot-starter")
 //    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-web")
-    implementation("org.springframework.boot:spring-boot-starter-validation")
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
 
     // telegram

@@ -1,4 +1,4 @@
-package com.dreamteam.debtsreminderbot.configuration;
+package com.bukkaa.debts_reminder.configuration;
 
 import lombok.Getter;
 import org.springframework.boot.context.properties.ConfigurationProperties;

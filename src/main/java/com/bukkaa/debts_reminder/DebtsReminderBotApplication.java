@@ -1,6 +1,6 @@
-package com.dreamteam.debtsreminderbot;
+package com.bukkaa.debts_reminder;
 
-import com.dreamteam.debtsreminderbot.configuration.TelegramConfig;
+import com.bukkaa.debts_reminder.configuration.TelegramConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;

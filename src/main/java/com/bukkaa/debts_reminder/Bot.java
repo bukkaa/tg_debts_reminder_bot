@@ -1,4 +1,4 @@
-package com.dreamteam.debtsreminderbot;
+package com.bukkaa.debts_reminder;
 
 import org.springframework.scheduling.annotation.Scheduled;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
