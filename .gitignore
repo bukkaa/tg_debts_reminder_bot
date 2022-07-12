@@ -2,7 +2,7 @@
 *.class
 
 .gradle
-build/
+build
 !gradle/wrapper/gradle-wrapper.jar
 
 ### STS ###
@@ -22,7 +22,8 @@ build/
 *.iws
 *.iml
 *.ipr
-out/
+out
+target
 
 # Package Files #
 *.jar
