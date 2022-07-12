@@ -1,15 +1,15 @@
-package com.bukkaa.debts_reminder;
+package com.bukkaa.tg.debts_reminder_bot;
 
-import com.bukkaa.debts_reminder.configuration.TelegramConfig;
+import com.bukkaa.tg.debts_reminder_bot.config.TelegramProperties;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
 @SpringBootApplication
-@EnableConfigurationProperties(value = TelegramConfig.class)
-public class DebtsReminderBotApplication {
+@EnableConfigurationProperties(TelegramProperties.class)
+public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(DebtsReminderBotApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
 }
