@@ -1,4 +1,4 @@
-package com.bukkaa.tg.debts_reminder_bot.config;
+package com.bukkaa.tg.debts_reminder_bot.ri.bot_client.config;
 
 import lombok.AccessLevel;
 import lombok.Data;

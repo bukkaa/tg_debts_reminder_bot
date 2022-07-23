@@ -1,6 +1,6 @@
 package com.bukkaa.tg.debts_reminder_bot;
 
-import com.bukkaa.tg.debts_reminder_bot.config.TelegramProperties;
+import com.bukkaa.tg.debts_reminder_bot.ri.bot_client.config.TelegramProperties;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
